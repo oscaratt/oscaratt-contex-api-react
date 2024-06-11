@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../context/Context';
 
 export const About = () => {
+
+  const objectContext = useContext(Context);
+
   return (
     <div>
-    <h1>Pagina de Acerca de nosotros</h1>
-    <p>esta es la pagina de acerca de nosotros</p>
+      <h1>Página de Acerca de Nosotros</h1>
+      <p>Datos del cliente:</p>
+      <pre>{JSON.stringify(objectContext.user)}</pre>
   </div>
-)
+  )
 }
-

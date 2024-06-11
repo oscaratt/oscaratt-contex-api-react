@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../context/Context';
 
 export const Articles = () => {
+
+  const nameContextArt = useContext(Context);
+
   return (
     <div>
-          <div>
-    <h1>Pagina de Acerca de articulos</h1>
-    <p>esta es la pagina de acerca de nosotros</p>
+      <h1>Página de Artículos</h1>
+      <p>Comprador: {nameContextArt.user.name}</p>
   </div>
-    </div>
   )
 }
-
-

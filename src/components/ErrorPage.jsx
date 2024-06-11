@@ -3,8 +3,8 @@ import './../styles/error-page.css'
 
 export const ErrorPage = () => {
   return (
-    
-    <div class="site">
+    <body className='custom-body-class'>
+         <div class="site">
         <div class="sketch">
             <div className="bee-sketch red"></div>
             <div className="bee-sketch blue"></div>
@@ -14,6 +14,9 @@ export const ErrorPage = () => {
         <small>Tenemos un error ya estamos Solucionando</small></h1>
     </div>
    
+      
+    </body>
+ 
   )
 }
 
